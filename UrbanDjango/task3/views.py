@@ -20,7 +20,10 @@ def shop(request):
         'game_name2': 'Cyberpunk 2027',
         'game_name3': 'PayDay 2',
         'buy': 'Купить',
-        'back': 'Вернуться обратно'
+        'back': 'Вернуться обратно',
+        'home_page': 'Главная',
+        'shop': 'Магазин',
+        'cart': 'Корзина'
     }
     return render(request, 'third_task/shop.html', context)
 
@@ -28,6 +31,9 @@ def shop(request):
 def cart(request):
     context = {
         'cart_text': "Корзина пуста, добавьте уже что-то!",
-        'back': 'Вернуться обратно'
+        'back': 'Вернуться обратно',
+        'home_page': 'Главная',
+        'shop': 'Магазин',
+        'cart': 'Корзина'
     }
     return render(request, 'third_task/basket.html', context)
